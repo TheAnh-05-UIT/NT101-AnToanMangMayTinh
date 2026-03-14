@@ -1,0 +1,12 @@
+# executable
+*.exe
+
+# object files
+*.o
+*.obj
+
+# vscode settings
+.vscode/
+
+# build files
+*.out
