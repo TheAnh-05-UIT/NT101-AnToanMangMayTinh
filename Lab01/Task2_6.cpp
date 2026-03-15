@@ -13,6 +13,7 @@ using namespace std;
 map<char, double> ENGLISH_FREQ = {
     {'A', 0.0817}, {'B', 0.0150}, {'C', 0.0278}, {'D', 0.0425}, {'E', 0.1270}, {'F', 0.0223}, {'G', 0.0202}, {'H', 0.0609}, {'I', 0.0697}, {'J', 0.0015}, {'K', 0.0077}, {'L', 0.0403}, {'M', 0.0241}, {'N', 0.0675}, {'O', 0.0751}, {'P', 0.0193}, {'Q', 0.0010}, {'R', 0.0599}, {'S', 0.0633}, {'T', 0.0906}, {'U', 0.0276}, {'V', 0.0098}, {'W', 0.0236}, {'X', 0.0015}, {'Y', 0.0197}, {'Z', 0.0007}};
 
+// Chuẩn hóa văn bản đầu vào
 string clean_text(string text)
 {
     string result = "";
@@ -26,6 +27,10 @@ string clean_text(string text)
     return result;
 }
 
+/*
+Hàm get_index_of_coincidence
+Tính chỉ số trùng khớp (Index of Coincidence - IC)
+*/
 double get_index_of_coincidence(string text)
 {
     int n = text.length();
@@ -50,6 +55,10 @@ double get_index_of_coincidence(string text)
     return ic;
 }
 
+/*
+Hàm find_key_length
+Ước lượng độ dài khóa của Vigenere cipher.
+*/
 int find_key_length(string ciphertext, int max_len = 20)
 {
     int best_len = 1;
@@ -86,6 +95,11 @@ int find_key_length(string ciphertext, int max_len = 20)
     return best_len;
 }
 
+/*
+Hàm chi_squared_score
+Đánh giá độ giống giữa tần suất chữ cái của văn bản
+với tần suất chuẩn của tiếng Anh.
+*/
 double chi_squared_score(string text)
 {
     int n = text.length();
@@ -110,6 +124,7 @@ double chi_squared_score(string text)
     return score;
 }
 
+// Giải mã một đoạn văn bản được mã hóa bằng Caesar cipher.
 string decrypt_caesar(string text, int shift)
 {
     string result = "";
@@ -120,6 +135,20 @@ string decrypt_caesar(string text, int shift)
     return result;
 }
 
+/*
+Hàm crack_vigenere
+
+Đây là hàm chính thực hiện phá mã Vigenere.
+
+Các bước:
+
+1. Chuẩn hóa ciphertext
+2. Tìm độ dài khóa bằng IC
+3. Chia ciphertext thành các nhóm Caesar
+4. Phá từng nhóm bằng Chi-squared
+5. Tìm từng ký tự khóa
+6. Giải mã toàn bộ ciphertext
+*/
 void crack_vigenere(string ciphertext)
 {
     string clean_ct = clean_text(ciphertext);
@@ -156,7 +185,7 @@ void crack_vigenere(string ciphertext)
 
     string plaintext = "";
     int key_index = 0;
-
+    // Giải mã toàn bộ ciphertext sử dụng khóa tìm được
     for (char c : ciphertext)
     {
         if (isalpha(c))
@@ -200,7 +229,7 @@ int main()
     if (choice == "2")
     {
         string filename;
-        cout << "Nhap ten file (VD: data.txt): ";
+        cout << "Nhap ten file (VD: input.txt): ";
         getline(cin, filename);
 
         ifstream file(filename);
