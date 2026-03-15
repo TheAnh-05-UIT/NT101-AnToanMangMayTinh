@@ -1,5 +1,3 @@
----
-
 # Task 2.6 – Phân tích tần suất và tấn công Vigenère Cipher (C++)
 
 ## Giới thiệu
