@@ -203,6 +203,8 @@ Task6.exe
 
 ## Ví dụ chạy chương trình
 
+1. VD1:
+
 ```
 === Vigenere Cipher Breaker ===
 
@@ -219,6 +221,26 @@ Khoa tim duoc: KEY
 
 Ban ro du doan:
 HELLOWORLD
+```
+
+2. VD2:
+
+```
+=== Vigenere Cipher Breaker ===
+
+Ban muon nhap tu (1) Ban phim hay (2) File? 1
+
+Nhap ciphertext:
+pp oiuibvql avpgzwm, vyabnwzycbbg klhqla mv uqwckl kzzwktcfcwg hpp wwftwzcktakah bxjjzcynlu pyzbcgp zzht omnpxtcfckts eahkxwve uvw h uqn wy ywxy-jtzgp wiejwxubbvpe wiesgp utzvtunpfz va nztuurizf tgemizlu uh etfu fbim htq bikk va xmvprtyz. mogey lxagdgqgpufck tsialqmooe uzx buqx nhy edsxmviduxape wyg zlpqlimpqz uvw kkscbts uuavbui mhl oltuzqvhvuiv mv rdibxjv pubt wtupivf, yqv jkvyecvz vp fbm buvqlvxa czx khuhuxmgakmf khtoghqvhvuivl zwob il jtqxqm jcdx bkhpeukmpqzm igk gyuqe
+
+------------------------------
+PHAN TICH HOAN TAT
+Do dai khoa du doan: 6
+Khoa tim duoc: HCMUIT
+------------------------------
+
+Ban ro du doan:
+in computer science, cryptography refers to secure information and communication techniques derived from mathematical concepts and a set of rule-based calculations called algorithms to transform messages in ways that are hard to decipher. these deterministic algorithms are used for cryptographic key generation and digital signing and verification to protect data privacy, web browsing on the internet and confidential communications such as credit card transactions and email
 ```
 
 ---
