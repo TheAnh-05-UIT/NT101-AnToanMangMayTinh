@@ -4,7 +4,7 @@
 
 - **Môn học:** An toàn mạng máy tính  
 - **Mã lớp:** NT101.Q21.1
-- **Giảng viên:** Nguyễn Ngọc Trưởng  
+- **Giảng viên:** KS.Nguyễn Ngọc Trưởng  
 - **Nhóm thực hành:** Nhóm 8
 
 ---
@@ -23,7 +23,7 @@
 | Lab | Tên bài thực hành |
 |-----|-----------|
 | Lab 1 | Classical Cryptography |
-| Lab 2 | Chưa cập nhật ... |
+| Lab 2 | Modern Cryptography |
 | Lab 3 | Chưa cập nhật ... |
 | Lab 4 | Chưa cập nhật ... |
 | Lab 5 | Chưa cập nhật ... |

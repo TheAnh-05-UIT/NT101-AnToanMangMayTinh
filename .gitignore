@@ -10,3 +10,8 @@
 
 # build files
 *.out
+
+# python cache
+__pycache__/
+*.py[cod]
+.env
